@@ -22,7 +22,7 @@ class Cat extends Animals{
             return $this->age+1;
         } elseif ($this->eat == "meet"){
             return $this->age+2;
-        }
+        }return null;
     }
 }
 $Gosha = new Cat();
@@ -37,6 +37,21 @@ $Vasik->age = 2;
 $Vasik->eat = "meet";
 $res = $Vasik->Eating();
 $Vasik->ShowName("Vasik");
-echo "Vasik have age 2 year. Now Vasik eating " . $Vasik->eat . " then have age = " . $res;
+echo "Vasik have age 2 year. Now Vasik eating " . $Vasik->eat . " then have age = " . $res . '<br>';
+
+
+$Chiken = new Animals();
+$Chiken->age = 0.1;
+$Chiken->eat = "milk";
+$res = $Chiken->Eating();
+$Chiken->ShowName("Chiken");
+echo "Chiken have age 0.1 year. Now Gosha eating " . $Chiken->eat . " then have age = " . $res . '<br>';
+
+$Aligator = new Animals();
+$Aligator->age = 8;
+$Aligator->eat = "meet";
+$res = $Aligator->Eating();
+$Aligator->ShowName("Aligator");
+echo "Aligator have age 8 year. Now Aligator eating " . $Aligator->eat . " then have age = " . $res;
 
 ?>
