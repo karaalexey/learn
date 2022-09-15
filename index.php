@@ -16,7 +16,7 @@ function Eating(){
     echo $this->name . '<br>';
    }
 }
-
+// Test
 class Cat extends Animals{
      function Eating(){
         if ($this->eat == "milk"){
