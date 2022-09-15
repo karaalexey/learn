@@ -4,10 +4,11 @@ public $age;
 public $eat;
 private $name;
 function Eating(){
-       if ($this->eat == "milk") {
-           return $this->age++;
-       }
-       echo "Ваше животное чувствует себя очень хорошо, но его(ее) возраст остался прежним";
+    if ($this->eat == "milk") {
+       return $this->age++;
+    }
+    echo "Ваше животное чувствует себя очень хорошо, но его(ее) возраст остался прежним<br>";
+    return $this->age;
    }
 
    function ShowName($name){
@@ -50,8 +51,8 @@ echo "Chiken have age 0.1 year. Now Gosha eating " . $Chiken->eat . " then have 
 $Aligator = new Animals();
 $Aligator->age = 8;
 $Aligator->eat = "meet";
-$res = $Aligator->Eating();
 $Aligator->ShowName("Aligator");
+$res = $Aligator->Eating();
 echo "Aligator have age 8 year. Now Aligator eating " . $Aligator->eat . " then have age = " . $res;
 
 ?>
