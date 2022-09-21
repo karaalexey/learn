@@ -1,7 +1,7 @@
 <?php
 
-include 'washmashine.php';
-
+//include 'washmashine.php';
+include 'house.php';
 
 
 
