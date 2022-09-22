@@ -1,7 +1,9 @@
 <?php
+
 //Наследование
 
-abstract class Town{
+abstract class Town
+{
     private $address;
     private $manyFloors;
     private $electriсity;
@@ -39,7 +41,7 @@ abstract class Town{
     public function setNeighbor($neighbor): void
     {$this->neighbor = $neighbor;}
 
-    public function ShowInfo(){
+    public function showInfo(){
         echo "Address: " . $this->address . "<br>Floors: " . $this->manyFloors;
         echo "<br>Electricity: " . $this->electriсity . "<br>Water: " . $this->water;
         echo "<br>Neighbors: " . $this->neighbor . "<br>";
@@ -47,9 +49,8 @@ abstract class Town{
     }
 
 }
-class House extends Town{
-
-
+class House extends Town
+{
 
 }
 
@@ -59,6 +60,6 @@ $house1->setManyFloors(5);
 $house1->setElectriсity("Have, good power");
 $house1->setWater("Have, clean");
 $house1->setNeighbor("Not so many, but very nice people");
-$house1->ShowInfo();
+$house1->showInfo();
 
 ?>

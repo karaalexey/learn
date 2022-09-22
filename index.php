@@ -1,8 +1,8 @@
 <?php
 
-//include 'washmashine.php';
-//include 'house.php';
-include 'peopleLive.php';
+//include 'Washmashine.php';
+include 'House.php';
+//include 'PeopleLive.php';
 
 
 

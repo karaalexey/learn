@@ -5,12 +5,14 @@ class Washmashine{
     protected $frame;
     protected $tank;
 
-    public function __construct($engine, $frame, $tank){
+    public function __construct($engine, $frame, $tank)
+    {
         $this->engine = $engine;
         $this->frame = $frame;
         $this->tank = $tank;
     }
-    public function ShowInfo(){
+    public function showInfo()
+    {
         echo "Двигатель мощностью " . $this->engine . ", размер корпуса " . $this->frame . ", максимальная загрузка белья " . $this->tank;
     }
 
@@ -24,14 +26,13 @@ class HorizontWash extends Washmashine{
     public function __construct($engine, $frame, $tank)
     {
         parent::__construct($engine, $frame, $tank);
-//        $this->inputClothes = $inputClothes;
     }
 
-    public function Start (){
-        self::Error(1);
+    public function start (){
+        self::error(1);
     }
 
-    private function Error ($err){
+    private function error ($err){
         echo $this->inputClothes;
         echo "ПУСК<br>";
         if ($err == 0){
@@ -45,7 +46,7 @@ class HorizontWash extends Washmashine{
     }
 }
 $beko = new HorizontWash("300W", "Big", "6Kg" );
-$beko->ShowInfo();
+$beko->showInfo();
 $beko->washClothes();
-$beko->Start();
+$beko->start();
 ?>
