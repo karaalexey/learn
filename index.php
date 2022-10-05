@@ -1,9 +1,12 @@
 <?php
 
-//include 'Washmashine.php';
-include 'House.php';
-//include 'PeopleLive.php';
+//include './some/Washmashine.php';
+//include './some/House.php';
+//include './some/PeopleLive.php';
 
+//include './polymorph/CloseDoor.php';
+//include './polymorph/YourInfo.php';
+//include './polymorph/Fruits.php';
 
 
 

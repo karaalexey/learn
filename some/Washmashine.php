@@ -29,7 +29,7 @@ class HorizontWash extends Washmashine{
     }
 
     public function start (){
-        self::error(1);
+        $this->error(1);
     }
 
     private function error ($err){
@@ -49,4 +49,5 @@ $beko = new HorizontWash("300W", "Big", "6Kg" );
 $beko->showInfo();
 $beko->washClothes();
 $beko->start();
+
 ?>

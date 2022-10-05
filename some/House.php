@@ -2,7 +2,7 @@
 
 //Наследование
 
-abstract class Town
+class Town
 {
     private $address;
     private $manyFloors;
@@ -51,7 +51,7 @@ abstract class Town
 }
 class House extends Town
 {
-
+//house reasetion
 }
 
 $house1 = new House();
