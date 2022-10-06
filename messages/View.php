@@ -1,8 +1,8 @@
 <?php
 
-//Это мой Controller
+//View
 
-class Control
+class View
 {
 
     protected $message;
@@ -11,8 +11,8 @@ class Control
     {
         echo 'Введите сообщение: ';
 
-        $this->message = readline("message");
-        //$this->message = 'qwer';  это для дебагера
+        //$this->message = readline("message");
+        $this->message = 'qwer';  //это для дебагера
         if ($this->message != ''){
             return $this->message;
         }else{

@@ -1,5 +1,5 @@
 <?php
-
+//Model
 class ConnDB
 {
     public function connect($sql)

@@ -1,16 +1,14 @@
 <?php
 
-//Это мой View
 require 'ConnDB.php';
 require 'AddMessage.php';
-require 'Control.php';
+require 'View.php';
 
-$control = new Control();
-//$control->setMessage();
+$view = new View();
+$connection = new ConnDB();
+$inputMess = $view->setMessage();
 $addMess = new AddMessage();
-//$addMess = new AddMessage();->addMessageToDB($control->setMessage());
-$conn = new ConnDB();
-$conn->connect($addMess->addMessageToDB($control->setMessage()));
-
+$messToSql = $addMess->addMessageToDB($inputMess);
+$connection->connect($messToSql);
 
 ?>
