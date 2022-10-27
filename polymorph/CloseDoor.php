@@ -23,7 +23,15 @@ class GoFromHome implements CloseDoorInterface
     }
 }
 
+function polymorfism (CloseDoorInterface $door1, CloseDoorInterface $door2)
+{
+    $door2->uMustCloseDoor().$door1->uMustCloseDoor();
+    //return $door1->uMustCloseDoor();
+}
+
+
 $door1 = new StayAtHome();
 $door2 = new GoFromHome();
-$door1->uMustCloseDoor();
-$door2->uMustCloseDoor();
+//$door1->uMustCloseDoor();
+//$door2->uMustCloseDoor();
+polymorfism($door1, $door2);
