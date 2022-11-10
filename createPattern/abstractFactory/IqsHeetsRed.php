@@ -1,10 +1,10 @@
 <?php
 
-class IqsHeets implements IqsHeetsInterface
+class IqsHeetsRed implements IqsHeetsInterface
 {
-    public function iqsHeets()
+    public function create()
     {
-        return  "It's Stick for IQS Strong(Red)";
+        echo "It's Stick for IQS Strong(Red)";
     }
 
 }

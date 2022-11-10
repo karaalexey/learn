@@ -1,6 +1,6 @@
 <?php
 
-Interface SigaretsInterface
+interface SigaretsInterface
 {
-    public function sigarets();
+    public function create();
 }

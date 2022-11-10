@@ -1,5 +1,6 @@
 <?php
 
+
 class RedSmokeFactory implements SmokeFactoryInterface
 {
     public function createGloStick(): GloStickInterface

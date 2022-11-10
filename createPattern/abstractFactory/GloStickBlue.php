@@ -2,8 +2,8 @@
 
 class GloStickBlue implements GloStickInterface
 {
-    public function gloStick()
+    public function create()
     {
-        return  "It's Stick for Glo Lite(Blue)";
+         echo "It's Stick for Glo Lite(Blue)";
     }
 }

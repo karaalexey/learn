@@ -1,6 +1,6 @@
 <?php
 
-Interface IqsHeetsInterface
+interface IqsHeetsInterface
 {
-    public function iqsHeets();
+    public function create();
 }

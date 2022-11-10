@@ -2,7 +2,7 @@
 
 class IqsHeetsBlue implements IqsHeetsInterface
 {
-    public function iqsHeets()
+    public function create()
     {
         return  "It's Stick for IQS Lite(Blue)";
     }

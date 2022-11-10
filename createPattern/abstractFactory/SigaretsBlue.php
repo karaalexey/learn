@@ -2,7 +2,7 @@
 
 class SigaretsBlue implements SigaretsInterface
 {
-    public function sigarets()
+    public function create()
     {
         return  "It's Sigarets Lite(Blue)";
     }

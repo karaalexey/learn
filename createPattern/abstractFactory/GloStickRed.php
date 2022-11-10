@@ -1,9 +1,9 @@
 <?php
 
-class GloStick implements GloStickInterface
+class GloStickRed implements GloStickInterface
 {
-    public function gloStick()
+    public function create()
     {
-        return  "It's Stick for Glo Strong(Red)";
+        echo  "It's Stick for Glo Strong(Red)";
     }
 }

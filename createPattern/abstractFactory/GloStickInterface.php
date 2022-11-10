@@ -1,6 +1,6 @@
 <?php
 
-Interface GloStickInterface
+interface GloStickInterface
 {
-    public function gloStick();
+    public function create();
 }
