@@ -6,14 +6,14 @@ class ChikenSoupBuilder implements SoupBuilderInterface
 
     public function reset(): SoupBuilderInterface
     {
-        $this->chikenSoup = new ChikenSoupBuilder();
+        //$this->chikenSoup = new ChikenSoupBuilder();
         $this->chikenSoup = '';
         return $this;
     }
 
     public function firstIngridients(array $first): SoupBuilderInterface
     {
-        $this->reset();
+        //$this->reset();
         $this->chikenSoup = "Pot with hot water, ";
 
         $this->chikenSoup .= " first we add " . implode(", ", $first);

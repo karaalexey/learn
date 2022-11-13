@@ -6,14 +6,14 @@ class RedSoupBuilder implements SoupBuilderInterface
 
     public function reset(): SoupBuilderInterface
     {
-        $this->redSoup = new RedSoupBuilder();
+        //$this->redSoup = new RedSoupBuilder();
         $this->redSoup = "Pot with hot water, ";
         return $this;
     }
 
     public function firstIngridients(array $first): SoupBuilderInterface
     {
-        $this->reset();
+        //$this->reset();
         $this->redSoup .= " first we add " . implode(", ", $first);
         return $this;
     }

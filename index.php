@@ -4,7 +4,7 @@
 //include './some/House.php';
 //include './some/PeopleLive.php';
 
-include './polymorph/CloseDoor.php';
+//include './polymorph/CloseDoor.php';
 //include './polymorph/YourInfo.php';
 //include './polymorph/Fruits.php';
 

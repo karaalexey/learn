@@ -1,0 +1,23 @@
+{
+    "name": "alexeykara/learn",
+    "description": "firstTime",
+    "type": "project",
+    "license": "my",
+    "autoload": {
+        "psr-4": {
+            "Alexeykara\\Learn\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alexeykara"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "lrn\\": ""
+        }
+    }
+}
