@@ -2,12 +2,11 @@
 
 namespace lrn\structuralPattern\adapter;
 
-class EnglishMessage
+class HebrewMessage
 {
     public function showMessage(string $msg)
     {
         echo $msg;
         echo "\n";
-
     }
 }
