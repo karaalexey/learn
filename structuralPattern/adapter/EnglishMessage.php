@@ -2,7 +2,7 @@
 
 namespace lrn\structuralPattern\adapter;
 
-class EnglishMessage
+class EnglishMessage implements MessageAdapterInterface
 {
     public function showMessage(string $msg)
     {
