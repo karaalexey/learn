@@ -9,12 +9,17 @@ class Delivery implements DeliveryInterface
     private $far = ["Kherson"=>500,
                     "Khmelnitsk"=>100,
                     "Odessa"=>400,
-                    "Kiev"=>300];
+                    "Kiev"=>300,
+                    "0"=>1];
     private $km = 0;
 //    public $deliPrice;
     public function __construct($kg, $city)
     {
-        $this->kg = $kg;
+        if($kg<1 || $kg == " "){
+            $this->kg = 1;
+        }else {
+            $this->kg = $kg;
+        }
         $this->city = $city;
     }
     public function howFar()
@@ -33,7 +38,7 @@ class Delivery implements DeliveryInterface
     public function priceForDeli()
     {
         $myKm = $this->howFar();
-        $deliPrice = $this->kg*0.01*$myKm;
+        $deliPrice = $this->kg*0.01*$myKm+20;
         return $deliPrice;
     }
 

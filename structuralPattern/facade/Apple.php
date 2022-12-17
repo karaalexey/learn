@@ -6,7 +6,8 @@ class Apple implements VegitablesInterface
 {
 public $name = "Apple";
 public $haveNow = 50;
-protected $price = 10;
+public $price = 10;
+public $er = 0;
 
 public function priceOnly(int $kg)
 {
@@ -15,8 +16,9 @@ public function priceOnly(int $kg)
         return $yourPrice;
     }
     else{
-        echo "Don't have this weight of $this->name, Sorry!";
-        exit;
+        //exit;
+        $this->er = 1;
+        return $this->er;
     }
 }
 }

@@ -9,6 +9,8 @@ class Order
     protected $city;
     public $price;
     public $deli;
+    public $name;
+    public $deliver;
 
 
     public function __construct(VegitablesInterface $vegitables, $kg, $city)
@@ -21,16 +23,21 @@ class Order
     public function totalPrice()
     {
         $this->deli = new Delivery($this->kg, $this->city);
-        $deliver = $this->deli->priceForDeli();
-        if($deliver == 0){
+        $this->deliver = $this->deli->priceForDeli();
+        if($this->deliver == 0){
             echo "Bad city";
             echo "\n";
-        } else {
+        } else if ($this->vegitables->priceOnly($this->kg) != 1) {
             $this->price = $this->vegitables->priceOnly($this->kg);
-            $name = $this->vegitables->name;
-            echo "You total price for $name : " . $this->price + $deliver;
+            $this->name = $this->vegitables->name;
+            echo "You total price for $this->name : " . $this->price + $this->deliver . "; Delivery to $this->city";
+            echo "\n";
+        } else {
+            $this->name = $this->vegitables->name;
+            echo "Don't have this weight of $this->name , Sorry!";
             echo "\n";
         }
+
 
     }
 }
