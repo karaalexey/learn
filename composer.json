@@ -14,7 +14,9 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+      "ext-readline": "*"
+    },
     "autoload": {
         "psr-4": {
             "lrn\\": ""
